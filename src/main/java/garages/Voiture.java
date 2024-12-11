@@ -67,8 +67,11 @@ public class Voiture {
 	 */
 	public Set<Garage> garagesVisites() {
 		// TODO: Implémenter cette méthode
-
-		return new HashSet<>();
+		Set<Garage> garages = new HashSet<>();
+		for (int i = 0 ; i < myStationnements.size() ; i++){
+			garages.add(myStationnements.get(i).getGarageVisite());
+		}
+		return garages;
 	}
 
 	/**
